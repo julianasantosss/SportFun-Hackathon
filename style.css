@@ -1,3 +1,397 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+Estilos Mayra  */
+
+.contenedor-carrito{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.items-carrito{
+    width: 65%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.info-producto {
+    display: flex;
+    flex-direction: column;
+}
+
+.precio {
+    font-weight: bold;
+}
+
+.boton-cantidad  {
+    display: flex;
+    align-items: center;
+}
+
+.boton-cantidad button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+.carrito-resumen{
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.checkout-btn:hover {
+    background-color: #444;
+}
+
+.tucarrito{
+    margin-left: 13%;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 2%;
+  }
+  
+.social-icon:hover {
+    transform: scale(1.1);
+  }
+
+/* Estilos Eduard */
+
+/* disposicion y justificacion */
+.comunidad {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100vh;
+    margin-left: 10px;
+    justify-content: center;
+}
+
+/* se relaciona ocultar lo que este fuera del contenedor
+espacio entre cards y manito sobre div */
+.senderismo{
+    position: relative;
+    overflow: hidden;
+    gap: 3px;
+    width: 400px;
+    cursor: pointer;
+}
+
+/* se oculta a primera imagen con opacidad 0
+se le una transicion para no ser tan tosco el 
+cambio se le da traslucides al 60% color letra blanca */
+.senderismo .capa {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: rgba(0, 0, 0, 60%);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    text-align: center;
+}
+
+/* cuando se pase el cursor muestra el texto */
+.senderismo .capa:hover{
+    opacity: 1;
+
+}
+
+/* se alinea al centro  */
+.capa h3{
+    margin-top: 250px;
+}
+
+/* contenedor negro y letra blanca centrada */
+.tituloComunidad{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: white;
+    background-color: rgb(46, 46, 46);
+}
+
+/* redondes y color de fondo negro */
+.capa button{
+    border-radius: 20px;
+    background-color: black;
+}
+
+/* color blanco en texto y sin linea */
+.capa button a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+  
