@@ -15,9 +15,8 @@ body {
 .card-item {
     width: 18rem;
     height: 18rem; 
-    box-shadow: 0 0 5px 0 black;
+    box-shadow: 0px 0px 5px black;
     border-radius: 20px;
-    border-style: none;
 }
 
 /* uso del espacio en imagen y border superior redondo
@@ -27,12 +26,19 @@ espacio margen al texto que continua*/
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
     box-shadow: 0 0 5px black;
 }
 
-.descripcion {
+.descripcion p{
     padding-left: 20px;
+}
+
+.descripcion .agregar {
+    border-radius: 20px;
+    margin-left: 50px;
+    background-color: rgb(12, 12, 12);
+    color: white;
 }
 
 
