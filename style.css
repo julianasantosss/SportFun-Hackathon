@@ -1,3 +1,75 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+
+/* establece uso del espacio */
+.contenedorProductos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* tamaño de tarjeta border redondo */
+.card-item {
+    width: 18rem;
+    height: 18rem; 
+    box-shadow: 0 0 5px 0 black;
+    border-radius: 20px;
+    
+}
+
+/* uso del espacio en imagen y border superior redondo
+espacio margen al texto que continua*/
+.card-item img {
+    height: 60%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 20px;
+}
+
+/* titulo de section fondo negro letra blanca centrado
+espacio arriba y abajo */
+.productosTitulo{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: white;
+    background-color: rgb(46, 46, 46);
+}
+
+
+
+/* 
+animacion llamada show
+cuando se inicia las imagenes son opacas y pequeñas
+y acuando llegan al viewport claras y tamaño normal */
+@keyframes show{
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+/* se le el un nombre al viewtimin y estara enlazado 
+al scroll en vertical y enlazamos el scroll y el elemento que 
+vamos animar */
+.card-item {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+/* estilizamos que se muestre la animacion al 25 apenas se muestre en pantalla
+y al 30 se vera completa, y con animation-fiil-mode se ve de igual manera 
+para arriba que para abajo, de esta manera se quita un bug de salto imagen */
+animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
