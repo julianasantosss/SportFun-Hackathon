@@ -1,3 +1,151 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+.header {
+    background-color: #000;
+    color: #fff;
+}
+
+.top-banner {
+    text-align: center;
+    padding: 5px;
+    background-color: #333;
+    font-size: 12px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+    text-decoration:none !important;
+    color: black !important;
+}
+
+.nav-button {
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #000;
+    text-decoration:none !important;
+    color: black !important;
+}
+
+.nav-button:hover {
+    background-color: #f0f0f0;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex: 1; 
+}
+
+.search-container input {
+    flex: 1; 
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #dddddd;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.icons .icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+    color: #000;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+.promo {
+    text-align: center;
+}
+
+.promo-button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+
+
+.card-container {
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 25px; 
+        
+}
+.custom-card {
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+.text-section {
+    text-align: left;
+    padding-right: 20px;
+}
+.text-section p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-item img {
+    height: 270px;
+    object-fit: cover;
+    border-radius: 10px;
+}
