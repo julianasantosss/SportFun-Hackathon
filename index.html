@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SportFun</title>
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -47,17 +47,18 @@
             <button class="promo-button">Descubre más!</button>
         </div>
     </main>
-    </header>
 
-    
+
+
     <div class="container card-container">
         <div class="card custom-card shadow">
             <div class="row g-0">
-                
+
                 <div class="col-md-7 text-section d-flex align-items-center">
-                    <p>Tu próxima meta empieza con el par perfecto. Explora nuestras opciones y descubre el mejor calzado para tus entrenamientos. No pierdas la oportunidad de encontrar tu compañero ideal.</p>
+                    <p>Tu próxima meta empieza con el par perfecto. Explora nuestras opciones y descubre el mejor
+                        calzado para tus entrenamientos. No pierdas la oportunidad de encontrar tu compañero ideal.</p>
                 </div>
-                
+
                 <div class="col-md-5 carousel-container">
                     <div id="carouselExample" class="carousel slide">
                         <div class="carousel-inner">
@@ -74,17 +75,163 @@
                                 <img src="./img/4.jpeg" class="d-block w-100" alt="Imagen 3">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+       <div class="contenedorSeccionProductos">
+        <div class="productosTitulo">
+            <h3>Explora Nuestros Productos</h3>
+        </div>
+
+       <div class="contenedorProductos">
+
+
+            <div class="card-item" id="item1">
+                <img src="./img/tenis1.avif" alt="Card image cap">
+                <div class="descripcion">
+                    <h6 id="descripcionTenis">Tenis offTrack</h6>
+                    <hr>
+                    <p id="precioTenis">$ 180.000
+                        <button class="agregar" onclick="addCarrito('item1')">Agregar</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-item" id="item2">
+                <img src="./img/tenis2.avif" alt="Card image cap">
+                <div class="descripcion">
+                    <h6 id="descripcionTenis">Tenis offTrack Pro</h6>
+                    <hr>
+                    <p id="precioTenis">$ 180.000
+                        <button class="agregar" onclick="addCarrito('item2')">Agregar</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-item" id="item3">
+                <img src="./img/tenis3.avif" alt="Card image cap">
+                <div class="descripcion">
+                    <h6 id="descripcionTenis">Runner city</h6>
+                    <hr>
+                    <p id="precioTenis">$ 180.000
+                        <button class="agregar" onclick="addCarrito('item3')">Agregar</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-item" id="item4">
+                <img src="./img/tenis4.avif" alt="Card image cap">
+                <div class="descripcion">
+                    <h6 id="descripcionTenis">outstreet Romano</h6>
+                    <hr>
+                    <p id="precioTenis">$ 180.000
+                        <button class="agregar" onclick="addCarrito('item4')">Agregar</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-item" id="item5">
+                <img src="./img/tenis5.avif" alt="Card image cap">
+                <div class="descripcion">
+                    <h6 id="descripcionTenis">Patfom sect</h6>
+                    <hr>
+                    <p id="precioTenis">$ 180.000
+                        <button class="agregar" onclick="addCarrito('item5')">Agregar</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-item" id="item6">
+                <img src="./img/tenis6.jpg" alt="Card image cap">
+                <div class="descripcion">
+                    <h6 id="descripcionTenis">Delivery heaven</h6>
+                    <hr>
+                    <p id="precioTenis">$ 180.000
+                        <button class="agregar" onclick="addCarrito('item6')">Agregar</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-item" id="item7">
+                <img src="./img/tenis7.jpg" alt="Card image cap">
+                <div class="descripcion">
+                    <h6 id="descripcionTenis">Tkek Rino</h6>
+                    <hr>
+                    <p id="precioTenis">$ 180.000
+                        <button class="agregar" onclick="addCarrito('item7')">Agregar</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-item" id="item8">
+                <img src="./img/tenis8.avif" alt="Card image cap">
+                <div class="descripcion">
+                    <h6 id="descripcionTenis">Anular World</h6>
+                    <hr>
+                    <p id="precioTenis">$ 180.000
+                        <button class="agregar" onclick="addCarrito('item8')">Agregar</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-item" id="item9">
+                <img src="./img/tenis9.avif" alt="Card image cap">
+                <div class="descripcion">
+                    <h6 id="descripcionTenis">Prizz Jumper</h6>
+                    <hr>
+                    <p id="precioTenis">$ 180.000
+                        <button class="agregar" onclick="addCarrito('item9')">Agregar</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-item" id="item10">
+                <img src="./img/tenis10.avif" alt="Card image cap">
+                <div class="descripcion">
+                    <h6 id="descripcionTenis">Ocean Wavek</h6>
+                    <hr>
+                    <p id="precioTenis">$ 180.000
+                        <button class="agregar" onclick="addCarrito('item10')">Agregar</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-item" id="item11">
+                <img src="./img/tenis11.avif" alt="Card image cap">
+                <div class="descripcion">
+                    <h6 id="descripcionTenis">OnRunner</h6>
+                    <hr>
+                    <p id="precioTenis">$ 180.000
+                        <button class="agregar" onclick="addCarrito('item11')">Agregar</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-item" id="item12">
+                <img src="./img/tenis12.avif" alt="Card image cap">
+                <div class="descripcion">
+                    <h6 id="descripcionTenis">Scale Mountain</h6>
+                    <hr>
+                    <p id="precioTenis">$ 180.000
+                        <button class="agregar" onclick="addCarrito('item12')">Agregar</button>
+                    </p>
+                </div>
+            </div>
+
+
         </div>
     </div>
 
