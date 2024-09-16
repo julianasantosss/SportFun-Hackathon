@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!-- Header 20% Descuento -->
     <header class="header">
         <div class="top-banner">
             <p>Regístrate y obtén 20% off en tu primera orden!</p>
@@ -24,29 +25,28 @@
                 <div class="nav-buttons">
                     <button class="nav-button btn btn-link">Inicio</button>
                     <button class="nav-button btn btn-link" onclick="scrollToSection('productos')">Productos</button>
-                    <button class="nav-button btn btn-link">Sobre Nosotros</button>
+                    <button class="nav-button btn btn-link" onclick="scrollToSection('sobrenosotros')">Sobre Nosotros</button>
                 </div>
             </div>
             <div class="search-container">
                 <input type="text" placeholder="🔍 Buscar los productos">
             </div>
             <div class="icons">
-                <button class="icon-button">🛒</button>
+                <button class="icon-button" onclick="scrollToSection('carrito')">🛒</button>
                 <button class="icon-button">👤</button>
             </div>
         </nav>
     </header>
-
-    <main class="main-content">
-        <div class="promo">
+    <!-- Banner Principal -->
+    <main class="main-content ">
+        <div class="promo" >
             <h2>Tu próxima meta empieza con el par perfecto.</h2>
             <p>¡Descúbrelo!</p>
-            <button class="promo-button">Descubre más!</button>
+            <button class="promo-button" onclick="scrollToSection('productos')">Descubre más!</button>
         </div>
     </main>
 
-
-
+    <!-- Carrusel de imagenes-->
     <div class="container card-container">
         <div class="card custom-card shadow">
             <div class="row g-0">
@@ -87,6 +87,7 @@
             </div>
         </div>
     </div>
+    <!-- Seccion Productos -->
 
        <div class="contenedorSeccionProductos align-items-center" id="productos">
         <div class="productosTitulo">
@@ -232,7 +233,7 @@
         </div>
     
 
-
+    <!-- Seccion Comunidad -->
     <div class="tituloComunidad">
         <h3>Comunidad</h3>
     </div>
@@ -241,7 +242,6 @@
             <img src="./img/senderismo1.avif" alt="">
             <div class="capa">
                 <h3>Cali</h3>
-                <p>Caminata Ecologicas por El Carmelo, Dapa, Pico Loro, Pance y mucho mas.</p>
                 <button><a href="https://grupotravesiafarallones.blogspot.com/">Visitar</a></button>
             </div>
         </div>
@@ -249,7 +249,6 @@
             <img src="./img/senderismo2.avif" alt="">
             <div class="capa">
                 <h3>Medellin</h3>
-                <p>Camintas Ecologicas por Medio de Montañas, Cascadas y mucho mas Anotate.</p>
                 <button><a href="https://parasenderismo.com/senderismo-en-medellin/">Visitar</a></button>
             </div>
         </div>
@@ -257,15 +256,14 @@
             <img src="./img/senderismo3.jpg" alt="">
             <div class="capa">
                 <h3>Bogota</h3>
-                <p>senderismo de Conexión Natural, Caminatas Ecológicas Bogotá, podrás observar el cronograma mes a mes de las caminatas grupales de un día y tour por Colombia</p>
                 <button><a href="https://caminatasecologicasbogota.com/programa-senderismo-caminatas-ecologicas-bogota/">Visitar</a></button>
             </div>
         </div>
     </div>
  
 </div>
-       <!-- Seccion Tu carrito -->
-    <h1 class="tucarrito">Tu carrito</h1><hr>
+    <!-- Seccion Tu carrito -->
+    <h1 class="tucarrito" id="carrito">Tu carrito</h1><hr>
     <div class="contenedor-carrito">
 
         
@@ -286,7 +284,7 @@
     </div>
 
   <!-- Sobre nosotros -->
-  <div class="contenedor-nosotros">
+  <div class="contenedor-nosotros" id="sobrenosotros">
     <img src="./img/nosotros.png" class="img-fluid">
     <div class="texto-nosotros">
       Sobre nosotros
@@ -295,7 +293,7 @@
 
   <!-- Equipo -->
 <div class="contenedor-equipo">
-  <div class="equipo" style="width: 20rem;">
+  <div class="equipo" style="width: 30rem;">
     <div class="card-body">
       <h2 class="card-title">Mayra Santos</h2>
       <hr class="linea">
@@ -304,7 +302,7 @@
     </div>
   </div>
 
-  <div class="equipo" style="width: 20rem;">
+  <div class="equipo" style="width: 30rem;">
     <div class="card-body">
       <h2 class="card-title">Eduard Idrobo</h2>
       <hr class="linea">
@@ -312,7 +310,7 @@
     </div>
   </div>
 
-  <div class="equipo"  style="width: 20rem;">
+  <div class="equipo"  style="width: 30rem;">
     <div class="card-body">
       <h2 class="card-title">Tatiana Campos</h2>
       <hr class="linea">
@@ -320,11 +318,11 @@
     </div>
   </div>
 
-  <div class="equipo" style="width: 20rem;">
+  <div class="equipo" style="width: 30rem;">
     <div class="card-body">
       <h2 class="card-title">Yecibeth Rivera</h2>
       <hr class="linea">
-      <p class="card-text">Desarrolladora Full-Stact en java <br> Apadionada por la tecnologia.</p>
+      <p class="card-text">Desarrolladora Full-Stact en java <br> Apasionada por la tecnologìa.</p>
     </div>
   </div>
 </div>
@@ -380,13 +378,13 @@
                 <h6 class="text-uppercase fw-bold mb-4">
                 Inicio  
                 </h6>
-                <p>
-                <a href="#!" class="text-reset">Productos</a>
+                <p onclick="scrollToSection('productos')">
+                <a href="#!" class="text-reset" >Productos</a>
                 </p>
-                <p>
+                <p onclick="scrollToSection('productos')">
                 <a href="#!" class="text-reset">Ofertas</a>
                 </p>
-                <p>
+                <p onclick="scrollToSection('sobrenosotros')">
                 <a href="#!" class="text-reset">Sobre Nosotros</a>
                 </p>
             </div>
@@ -431,10 +429,10 @@
 
 
 
-    
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-<script src="script.js"></script>
+    <script src="script.js"></script>
+</body>
+
 </html>

@@ -2,9 +2,14 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.header {
-    background-color: #000;
+/* Navbar Fijo y superpuesto */
+
+.header { 
     color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: 1s ease;
 }
 
 .top-banner {
@@ -13,6 +18,10 @@ body {
     background-color: #333;
     font-size: 12px;
 }
+.top-banner p{
+   margin-top: 5px;
+   margin-bottom: 3px;
+}
 
 .navbar {
     display: flex;
@@ -20,6 +29,10 @@ body {
     justify-content: space-between;
     padding: 10px 20px;
     background-color: #fff;
+    z-index: 1000;
+}
+.navbar.translucent {
+    background-color: rgba(48, 48, 48, 0.392);
 }
 
 .navbar-left {
@@ -96,6 +109,10 @@ body {
     align-items: center;
     background-color: #ddd;
     padding: 20px;
+    padding-top: 120px;
+}
+.main-content p{
+    font-size: 25px;
 }
 
 .promo {
@@ -113,22 +130,23 @@ body {
 }
 
 
-
+/* Carrusel */
 
 .card-container {
-    background-color: #ddd;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 15px;
     margin-top: 25px; 
         
 }
 .custom-card {
-    border-radius: 15px;
+     
     overflow: hidden;
     display: flex;
     align-items: center;
     padding: 20px;
     background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .text-section {
     text-align: left;
@@ -139,16 +157,15 @@ body {
     font-size: 18px;
     line-height: 1.5;
 }
-.carousel-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .carousel-item img {
     height: 270px;
     object-fit: cover;
     border-radius: 10px;
 }
+
+/* Seccion Productos */
+
 /* establece uso del espacio */
 .contenedorProductos {
     display: flex;
@@ -162,8 +179,15 @@ body {
 .card-item {
     width: 18rem;
     height: 18rem; 
-    box-shadow: 0px 0px 5px black;
     border-radius: 20px;
+    border: none; /* Elimina cualquier borde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aplica la sombra */ 
+    background-color: white; /* Fondo blanco para la tarjeta */
+     /* Espaciado interno de la tarjeta */
+    margin: 20px; 
+}
+.card-item h6, p {
+    margin-left: 10px;
 }
 
 /* uso del espacio en imagen y border superior redondo
@@ -174,7 +198,6 @@ espacio margen al texto que continua*/
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     margin-bottom: 6px;
-    box-shadow: 0 0 5px black;
 }
 
 .descripcion p{
@@ -182,12 +205,11 @@ espacio margen al texto que continua*/
 }
 
 .descripcion .agregar {
-    border-radius: 20px;
+    border-radius: 9px;
     margin-left: 50px;
     background-color: rgb(12, 12, 12);
     color: white;
 }
-
 
 /* titulo de section fondo negro letra blanca centrado
 espacio arriba y abajo */
@@ -198,9 +220,6 @@ espacio arriba y abajo */
     color: white;
     background-color: rgb(46, 46, 46);
 }
-
-
-
 /* 
 animacion llamada show
 cuando se inicia las imagenes son opacas y pequeñas
@@ -216,7 +235,6 @@ y acuando llegan al viewport claras y tamaño normal */
         scale: 100%;
     }
 }
-
 /* se le el un nombre al viewtimin y estara enlazado 
 al scroll en vertical y enlazamos el scroll y el elemento que 
 vamos animar */
@@ -235,7 +253,7 @@ animation-range: entry 25% cover 30%;
 
 
 /* 
-Estilos Mayra  */
+Estilos Seccion Carrito de Compras  */
 
 .contenedor-carrito{
     display: flex;
@@ -323,53 +341,55 @@ Estilos Mayra  */
     transform: scale(1.1);
   }
 
-/* Estilos Eduard */
+/* Estilos Comunidad */
 
-/* disposicion y justificacion */
+/* Estilos generales para el contenedor */
 .comunidad {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    height: 100vh;
-    margin-left: 10px;
-    justify-content: center;
+    justify-content: space-between; /* Espacio uniforme entre las imágenes */
+    gap: 10px; /* Espacio entre las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en pantallas más pequeñas */
+    margin-bottom: 30px;
 }
 
-/* se relaciona ocultar lo que este fuera del contenedor
-espacio entre cards y manito sobre div */
-.senderismo{
+/* Estilos para el contenedor de senderismo */
+.senderismo {
     position: relative;
-    overflow: hidden;
-    gap: 3px;
-    width: 400px;
-    cursor: pointer;
+    width: 30%; /* Ajusta según el número de imágenes y el diseño */
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga del contenedor */
+    border-radius: 8px; /* Bordes redondeados para un efecto más suave */
 }
 
-/* se oculta a primera imagen con opacidad 0
-se le una transicion para no ser tan tosco el 
-cambio se le da traslucides al 60% color letra blanca */
+/* Estilos para la capa */
 .senderismo .capa {
     position: absolute;
-    top: 0%;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     color: white;
-    background: rgba(0, 0, 0, 60%);
-    transition: all 500ms ease-out;
-    opacity: 0;
+    background: rgba(0, 0, 0, 0.6); /* Fondo negro con opacidad */
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.3s ease; /* Transición suave al mostrar el mensaje */
     text-align: center;
+    padding: 10px; /* Espaciado interno para el mensaje */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */
 }
 
-/* cuando se pase el cursor muestra el texto */
-.senderismo .capa:hover{
+.senderismo img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.senderismo:hover .capa {
     opacity: 1;
-
+    
 }
 
-/* se alinea al centro  */
-.capa h3{
-    margin-top: 250px;
-}
 
 /* contenedor negro y letra blanca centrada */
 .tituloComunidad{
@@ -391,10 +411,8 @@ cambio se le da traslucides al 60% color letra blanca */
     color: white;
     text-decoration: none;
 }
-
-
-
-  
+ 
+/* Seccion Nosotros */
 
 .contenedor-nosotros {
     position: relative;
@@ -436,6 +454,9 @@ img.img-fluid {
     justify-content: center;
     text-align: center;
 }
+.card-title{
+    font-size: 25px;
+}
 
 .contenedor-equipo {
     display: flex;
@@ -443,7 +464,7 @@ img.img-fluid {
     gap: 90px; 
     justify-content: center; 
     padding: 100px;
-    font-size: 20px;
+    font-size: 17px;
     margin-bottom: 50px;
 }
 
