@@ -395,3 +395,61 @@ cambio se le da traslucides al 60% color letra blanca */
 
 
   
+
+.contenedor-nosotros {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    display: flex; 
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 50px
+}
+
+img.img-fluid {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.texto-nosotros {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    font-size: 2vw;
+    padding: 10px;
+    text-align: center;
+    max-width: 90%;
+    word-wrap: break-word;
+    height: auto;
+}
+
+.equipo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contenedor-equipo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px; 
+    justify-content: center; 
+    padding: 100px;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.linea {
+    border: 0;
+    border-top: 2px solid #000;
+    width: 30%; 
+    margin: 20px auto; 
+}
